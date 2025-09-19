@@ -1,0 +1,10 @@
+[project]
+name = "fullscreennotice"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "flet[all]==0.28.3",
+    "nuitka>=2.7.14",
+]
