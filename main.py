@@ -2,7 +2,6 @@ import flet as ft
 from flet import (
     Page,
     TextField,
-    Dropdown,
     Text,
     Row,
     Column,
@@ -17,6 +16,11 @@ from flet import (
 )
 from tkinter import colorchooser
 from SpinBox import SpinBox
+import logging
+
+
+# --- 日志配置 ---
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 
 # --- 主应用函数 ---
@@ -27,10 +31,11 @@ def main(page: Page):
     # =========================================================================
     # 1. 配置初始窗口 (inp_win 的属性)
     # =========================================================================
-    page.title = "FullScreenNotice"
+    page.title = "全屏公示"
     page.window.width = 500
-    page.window.height = 420
+    page.window.height = 380
     page.window.resizable = False
+    page.window.icon = r"E:\Python\FullScreenNotice\storage\data\GridiconsNotice2.ico"
     page.theme_mode = ft.ThemeMode.DARK
 
     # 设置全局字体
@@ -216,4 +221,4 @@ def main(page: Page):
 
 # --- 运行 Flet 应用 ---
 if __name__ == "__main__":
-    ft.app(target=main)
+    ft.app(target=main, assets_dir="storage")
