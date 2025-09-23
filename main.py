@@ -17,10 +17,14 @@ from flet import (
 from tkinter import colorchooser
 from SpinBox import SpinBox
 import logging
+import os
 
 
 # --- 日志配置 ---
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+open(os.path.join('.', 'storage', 'temp', 'log.txt'), 'w').close()  # 清空日志文件
+logging.basicConfig(level=logging.DEBUG,  # 这样才能展示 flet 日志
+                    format='%(asctime)s - %(levelname)s - %(message)s',
+                    filename='storage/temp/log.txt')
 
 
 # --- 主应用函数 ---
@@ -35,12 +39,12 @@ def main(page: Page):
     page.window.width = 500
     page.window.height = 380
     page.window.resizable = False
-    page.window.icon = r"E:\Python\FullScreenNotice\storage\data\GridiconsNotice2.ico"
+    page.window.icon = os.path.abspath(r"./storage/data/GridiconsNotice2.ico")  # 必须使用绝对路径，弱智 flet
     page.theme_mode = ft.ThemeMode.DARK
 
     # 设置全局字体
     page.fonts = {
-        "Microsoft YaHei": "msyh.ttc"  # 确保你的系统中有这个字体文件，或者提供路径
+        "Microsoft YaHei": os.path.join('.', 'storage', 'data', 'msyh.ttc')
     }
     page.theme = ft.Theme(font_family="Microsoft YaHei")
 

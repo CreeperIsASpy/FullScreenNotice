@@ -1,0 +1,53 @@
+2025-09-23 07:02:57,536 - DEBUG - Using proactor: IocpProactor
+2025-09-23 07:02:57,566 - INFO - Assets path configured: E:\Python\FullScreenNotice\storage
+2025-09-23 07:02:57,567 - DEBUG - Creating new PubSubHub instance
+2025-09-23 07:02:57,567 - DEBUG - Creating new PubSubHub instance
+2025-09-23 07:02:57,567 - INFO - Starting up TCP server on localhost:53224
+2025-09-23 07:02:57,571 - INFO - Flet app has started...
+2025-09-23 07:02:57,575 - INFO - App URL: tcp://localhost:53224
+2025-09-23 07:02:57,575 - INFO - Starting Flet View app...
+2025-09-23 07:02:57,576 - INFO - Looking for Flet executable at: E:\Python\FullScreenNotice\.venv\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-09-23 07:02:57,576 - INFO - Flet View found in: E:\Python\FullScreenNotice\.venv\Lib\site-packages\flet_desktop\app\flet\flet.exe
+2025-09-23 07:02:57,802 - DEBUG - Connected new TCP client
+2025-09-23 07:02:57,802 - DEBUG - _on_message: {"action":"registerWebClient","payload":{"pageName":"","pageRoute":"/","pageWidth":"1264.0","pageHeight":"681.0","windowWidth":"1280.0","windowHeight":"720.0","windowTop":"10.0","windowLeft":"10.0","isPWA":"false","isWeb":"false","isDebug":"false","platform":"windows","platformBrightness":"dark","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}","sessionId":""}}
+2025-09-23 07:02:57,803 - DEBUG - __send: {"action":"registerWebClient","payload":{"session":{"id":"","controls":{"page":{"i":"page","t":"page","p":"","c":[],"route":"/","width":"1264.0","height":"681.0","windowwidth":"1280.0","windowheight":"720.0","windowtop":"10.0","windowleft":"10.0","pwa":"false","web":"false","debug":"false","platform":"windows","platformBrightness":"dark","media":"{\"padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_padding\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0},\"view_insets\":{\"top\":0.0,\"right\":0.0,\"bottom\":0.0,\"left\":0.0}}"}}},"error":"","appInactive":false}}
+2025-09-23 07:02:57,803 - DEBUG - _process_command: get ['page', 'route'] {}
+2025-09-23 07:02:57,803 - DEBUG - _process_command: get ['page', 'pwa'] {}
+2025-09-23 07:02:57,803 - DEBUG - _process_command: get ['page', 'web'] {}
+2025-09-23 07:02:57,803 - DEBUG - _process_command: get ['page', 'debug'] {}
+2025-09-23 07:02:57,803 - DEBUG - _process_command: get ['page', 'platform'] {}
+2025-09-23 07:02:57,803 - DEBUG - _process_command: get ['page', 'platformBrightness'] {}
+2025-09-23 07:02:57,803 - DEBUG - _process_command: get ['page', 'media'] {}
+2025-09-23 07:02:57,803 - DEBUG - _process_command: get ['page', 'width'] {}
+2025-09-23 07:02:57,803 - DEBUG - _process_command: get ['page', 'height'] {}
+2025-09-23 07:02:57,803 - DEBUG - _process_command: get ['page', 'windowWidth'] {}
+2025-09-23 07:02:57,803 - DEBUG - _process_command: get ['page', 'windowHeight'] {}
+2025-09-23 07:02:57,803 - DEBUG - _process_command: get ['page', 'windowTop'] {}
+2025-09-23 07:02:57,803 - DEBUG - _process_command: get ['page', 'windowLeft'] {}
+2025-09-23 07:02:57,803 - DEBUG - _process_command: get ['page', 'clientIP'] {}
+2025-09-23 07:02:57,803 - DEBUG - _process_command: get ['page', 'clientUserAgent'] {}
+2025-09-23 07:02:57,803 - INFO - App session started
+2025-09-23 07:02:57,805 - DEBUG - _process_command: set ['page'] {'fonts': '{"Microsoft YaHei":".\\\\storage\\\\data\\\\msyh.ttc"}', 'theme': '{"font_family":"Microsoft YaHei","page_transitions":{},"system_overlay_style":{}}', 'thememode': 'dark', 'title': 'È«ÆÁ¹«Ê¾', 'windowheight': '380', 'windowicon': 'E:\\Python\\FullScreenNotice\\storage\\data\\GridiconsNotice2.ico', 'windowresizable': 'false', 'windowwidth': '500'}
+2025-09-23 07:02:57,805 - DEBUG - _process_command: add [] {'to': 'page', 'at': '0'}
+2025-09-23 07:02:57,805 - DEBUG - _process_command: add [] {'to': 'page', 'at': '1'}
+2025-09-23 07:02:57,805 - DEBUG - sent to TCP: 604
+2025-09-23 07:02:57,805 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"updateControlProps","payload":{"props":[{"i":"page","fonts":"{\"Microsoft YaHei\":\".\\\\storage\\\\data\\\\msyh.ttc\"}","theme":"{\"font_family\":\"Microsoft YaHei\",\"page_transitions\":{},\"system_overlay_style\":{}}","thememode":"dark","title":"\u5168\u5c4f\u516c\u793a","windowheight":"380","windowicon":"E:\\Python\\FullScreenNotice\\storage\\data\\GridiconsNotice2.ico","windowresizable":"false","windowwidth":"500"}]}},{"action":"addPageControls","payload":{"controls":[{"t":"view","i":"_1","p":"page","c":["_2"],"at":"0"},{"t":"column","i":"_2","p":"_1","c":["_3","_4","_14"],"spacing":"20"},{"t":"textfield","i":"_3","p":"_2","c":[],"label":"\u8bf7\u8f93\u5165\u9700\u8981\u5168\u5c4f\u516c\u793a\u7684\u6587\u672c\u5185\u5bb9\u3002","maxlines":"5","minlines":"3","multiline":"true"},{"t":"row","i":"_4","p":"_2","c":["_5","_11"],"alignment":"start","spacing":"40"},{"t":"container","i":"_5","p":"_4","c":["_6"],"width":"150"},{"t":"stack","i":"_6","p":"_5","c":["_7","_8"],"n":"content"},{"t":"textfield","i":"_7","p":"_6","c":[],"contentpadding":"{\"l\":10,\"t\":20,\"r\":5,\"b\":5}","inputfilter":"{\"regex_string\":\"^[0-9]*$\",\"allow\":true,\"replacement_string\":\"\",\"multiline\":false,\"case_sensitive\":true,\"unicode\":false,\"dot_all\":false}","label":"\u5b57\u53f7","textalign":"left","value":"100"},{"t":"row","i":"_8","p":"_6","c":["_9","_10"],"alignment":"end","left":"5","right":"5","top":"5"},{"t":"iconbutton","i":"_9","p":"_8","c":[],"disabled":"false","icon":"keyboard_arrow_down_rounded","iconsize":"18","padding":"0","tooltip":"\"\\u51cf\\u5c11\""},{"t":"iconbutton","i":"_10","p":"_8","c":[],"disabled":"false","icon":"keyboard_arrow_up_rounded","iconsize":"18","padding":"0","tooltip":"\"\\u589e\\u52a0\""},{"t":"row","i":"_11","p":"_4","c":["_12","_13"],"alignment":"end","expand":"1"},{"t":"container","i":"_12","p":"_11","c":[],"bgcolor":"white","border":"{\"l\":{\"w\":1,\"c\":\"grey\",\"sa\":null},\"t\":{\"w\":1,\"c\":\"grey\",\"sa\":null},\"r\":{\"w\":1,\"c\":\"grey\",\"sa\":null},\"b\":{\"w\":1,\"c\":\"grey\",\"sa\":null}}","borderradius":"5","height":"30","width":"30"},{"t":"filledbutton","i":"_13","p":"_11","c":[],"expand":"1","icon":"color_lens_outlined","style":"{\"padding\":{},\"side\":{},\"shape\":{},\"text_style\":{}}","text":"\u9009\u62e9"},{"t":"row","i":"_14","p":"_2","c":["_15","_16"],"spacing":"20"},{"t":"elevatedbutton","i":"_15","p":"_14","c":[],"expand":"1","style":"{\"padding\":{},\"side\":{},\"shape\":{},\"text_style\":{}}","text":"\u9000\u51fa"},{"t":"filledbutton","i":"_16","p":"_14","c":[],"expand":"1","style":"{\"padding\":{},\"side\":{},\"shape\":{},\"text_style\":{}}","text":"\u5f00\u59cb\u516c\u793a"}],"trimIDs":[]}},{"action":"addPageControls","payload":{"controls":[{"t":"offstage","i":"_17","p":"page","c":[],"at":"1"}],"trimIDs":[]}}]}
+2025-09-23 07:02:57,806 - DEBUG - sent to TCP: 2877
+2025-09-23 07:02:58,082 - DEBUG - _on_message: {"action":"updateControlProps","payload":{"props":[{"i":"page","width":"484.0","height":"341.0","windowwidth":"500.0","windowheight":"380.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]}}
+2025-09-23 07:02:58,083 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"resized","eventData":"{\"width\":484.0,\"height\":341.0}"}}
+2025-09-23 07:02:58,083 - DEBUG - page.on_event_async: page change [{"i":"page","width":"484.0","height":"341.0","windowwidth":"500.0","windowheight":"380.0","windowtop":"10.0","windowleft":"10.0","windowminimized":"false","windowmaximized":"false","windowfocused":"true","windowfullscreen":"false"}]
+2025-09-23 07:02:58,083 - DEBUG - page.on_event_async: page resized {"width":484.0,"height":341.0}
+2025-09-23 07:03:00,361 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"_15","eventName":"click","eventData":null}}
+2025-09-23 07:03:00,361 - DEBUG - page.on_event_async: _15 click None
+2025-09-23 07:03:00,361 - DEBUG - _process_command: set ['page'] {'windowclose': '1758582180.361638'}
+2025-09-23 07:03:00,361 - DEBUG - __send: {"action":"pageControlsBatch","payload":[{"action":"updateControlProps","payload":{"props":[{"i":"page","windowclose":"1758582180.361638"}]}}]}
+2025-09-23 07:03:00,362 - DEBUG - sent to TCP: 147
+2025-09-23 07:03:00,396 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"inactive"}}
+2025-09-23 07:03:00,396 - DEBUG - page.on_event_async: page app_lifecycle_state_change inactive
+2025-09-23 07:03:00,397 - DEBUG - _on_message: {"action":"pageEventFromWeb","payload":{"eventTarget":"page","eventName":"app_lifecycle_state_change","eventData":"hide"}}
+2025-09-23 07:03:00,397 - DEBUG - page.on_event_async: page app_lifecycle_state_change hide
+2025-09-23 07:03:00,494 - DEBUG - Flet View process 25232
+2025-09-23 07:03:00,495 - DEBUG - Closing connection...
+2025-09-23 07:03:00,495 - DEBUG - Disconnecting all pages...
+2025-09-23 07:03:00,495 - DEBUG - page.on_event_async: page disconnect 
+2025-09-23 07:03:00,495 - DEBUG - Shutting down thread pool...
