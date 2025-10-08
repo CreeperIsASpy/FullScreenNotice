@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="storage/data/GridiconsNotice.ico" alt="Logo" width="80" height="80">
+<img src="storage/data/favicon.png" alt="Logo">
 
 # Full Screen Notice
 

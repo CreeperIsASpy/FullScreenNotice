@@ -18,6 +18,7 @@ from tkinter import colorchooser
 from SpinBox import SpinBox
 import logging
 import os
+from sys import platform
 
 
 # --- 日志配置 ---
@@ -28,7 +29,7 @@ logging.basicConfig(level=logging.DEBUG,  # 这样才能展示 flet 日志
 
 
 # --- 主应用函数 ---
-def main(page: Page):
+def main(page: Page):  # flet 竟然不能继承类来设置窗口属性，弱智 flet
     # 防止颜色选择器出错的状态锁
     color_picker_open = False
 
@@ -39,7 +40,8 @@ def main(page: Page):
     page.window.width = 500
     page.window.height = 380
     page.window.resizable = False
-    page.window.icon = os.path.abspath(r"./storage/data/GridiconsNotice2.ico")  # 必须使用绝对路径，弱智 flet
+    if platform == "win32":  # flet 的图标设置只在 Windows 生效，tkinter 都比它强，弱智 flet
+        page.window.icon = os.path.abspath(r"./storage/data/favicon.ico")  # 必须使用绝对路径，弱智 flet
     page.theme_mode = ft.ThemeMode.DARK
 
     # 设置全局字体
