@@ -3,6 +3,8 @@ __pycache__/
 *.py[oc]
 build/
 dist/
+*.build/
+*.dist/
 wheels/
 *.egg-info
 
@@ -20,4 +22,4 @@ windows
 nuitka-crash-report.xml
 
 # temp
-*/temp/*
+**/log.txt
