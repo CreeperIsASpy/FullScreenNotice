@@ -40,4 +40,4 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
           git commit -m "Build new binary distribution for Application.py."
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/PCL-Community/PCL2-Python.git HEAD:main
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/CreeperIsASpy/FullScreenNotice.git HEAD:main
