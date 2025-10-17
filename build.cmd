@@ -1,0 +1,1 @@
+uv run nuitka --standalone  --assume-yes-for-downloads --onefile  --user-package-configuration-file=nuitka-flet.yml --windows-console-mode=disable --windows-icon-from-ico=./storage/data/favicon.ico --include-data-dir=./storage=storage --plugin-enable=tk-inter main.py

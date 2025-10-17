@@ -1,0 +1,20 @@
+- module-name: 'flet'
+  data-files:
+     dirs:
+       - 'bin'
+  dlls:
+    - from_filenames:
+        relative_path: 'bin/flet'
+        prefixes:
+          - '*'
+        suffixes:
+          - 'dll'
+        dest_path: 'flet/bin/flet'
+    - from_filenames:
+        relative_path: 'bin/flet/data'
+        prefixes:
+          - '*'
+        suffixes:
+          - 'so'
+        dest_path: 'flet/bin/flet/data'
+      

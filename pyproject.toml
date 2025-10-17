@@ -1,7 +1,7 @@
 [project]
 name = "fullscreennotice"
 version = "0.1.0"
-description = "Add your description here"
+description = "一个专为学校大屏打造的全屏公示软件，使用 Flet 制作。"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [

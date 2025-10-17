@@ -18,7 +18,7 @@ from tkinter import colorchooser
 from SpinBox import SpinBox
 import logging
 import os
-from sys import platform
+import sys
 
 
 # --- 日志配置 ---
@@ -27,6 +27,16 @@ logging.basicConfig(level=logging.DEBUG,  # 这样才能展示 flet 日志
                     format='%(asctime)s - %(levelname)s - %(message)s',
                     filename='storage/temp/log.txt')
 
+def resource_path(relative_path):
+    """ 获取资源的绝对路径，兼容开发环境和 Nuitka 打包环境 """
+    if getattr(sys, 'frozen', False):
+        # 如果是 Nuitka 打包后的 .exe 文件
+        base_path = os.path.dirname(sys.executable)
+    else:
+        # 如果是正常的开发环境
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 # --- 主应用函数 ---
 def main(page: Page):  # flet 竟然不能继承类来设置窗口属性，弱智 flet
@@ -40,8 +50,8 @@ def main(page: Page):  # flet 竟然不能继承类来设置窗口属性，弱�
     page.window.width = 500
     page.window.height = 380
     page.window.resizable = False
-    if platform == "win32":  # flet 的图标设置只在 Windows 生效，tkinter 都比它强，弱智 flet
-        page.window.icon = os.path.abspath(r"./storage/data/favicon.ico")  # 必须使用绝对路径，弱智 flet
+    if sys.platform == "win32":  # flet 的图标设置只在 Windows 生效，tkinter 都比它强，弱智 flet
+        page.window.icon = resource_path(r"storage/data/favicon.ico")  # 必须使用绝对路径，弱智 flet
     page.theme_mode = ft.ThemeMode.DARK
 
     # 设置全局字体
