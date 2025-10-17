@@ -5,6 +5,9 @@ on:
     - cron: '0 4 * * *'  # 每天北京时间时间中午12点
   workflow_dispatch:
 
+permissions: # 显式指定权限
+  contents: write
+
 jobs:
   update-file:
     runs-on: windows-latest
