@@ -1,10 +1,6 @@
 # Python-generated files
 __pycache__/
 *.py[oc]
-build/
-dist/
-*.build/
-*.dist/
 wheels/
 *.egg-info
 
@@ -20,6 +16,11 @@ windows
 
 # nuitka
 nuitka-crash-report.xml
+*.exe
+build/
+dist/
+*.build/
+*.dist/
 
 # temp
 **/log.txt
